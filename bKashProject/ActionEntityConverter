@@ -1,0 +1,157 @@
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package com.bkash.bso.dni.solarsystemmiddleware.tethysexternalreportinterfacewebservice.service.entity;
+
+import java.io.Serializable;
+import java.util.List;
+import javax.xml.bind.annotation.XmlRootElement;
+
+/**
+ *
+ * @author Minhaz_b0038
+ */
+@XmlRootElement
+public class ExternalRequest implements  Serializable{
+
+    private String user;
+    private String pass;
+    private String newPass;
+    private String description;
+    private String hierarchy;
+    private String reportName;
+    private String msidn;
+    private String date;
+    private String endDate;
+    
+  
+    
+    private String reportId;
+    private String roleId;
+    
+    private String sysUser;
+    private String sysPass;
+    
+    List<QueryParameterWS> params;
+
+    public List<QueryParameterWS> getParams() {
+        return params;
+    }
+
+    public void setParams(List<QueryParameterWS> params) {
+        this.params = params;
+    }
+
+    public String getUser() {
+        return user;
+    }
+
+    public void setUser(String user) {
+        this.user = user;
+    }
+
+    public String getPass() {
+        return pass;
+    }
+
+    public void setPass(String pass) {
+        this.pass = pass;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+//    public String getRegion() {
+//        return hierarchy;
+//    }
+//
+//    public void setRegion(String hierarchy) {
+//        this.hierarchy = hierarchy;
+//    }
+
+    public String getReportName() {
+        return reportName;
+    }
+
+    public void setReportName(String reportName) {
+        this.reportName = reportName;
+    }
+
+    public String getHierarchy() {
+        return hierarchy;
+    }
+
+    public void setHierarchy(String hierarchy) {
+        this.hierarchy = hierarchy;
+    }
+
+    public String getMsidn() {
+        return msidn;
+    }
+
+    public void setMsidn(String msidn) {
+        this.msidn = msidn;
+    }
+
+    public String getDate() {
+        return date;
+    }
+
+    public void setDate(String date) {
+        this.date = date;
+    }
+
+    public String getEndDate() {
+        return endDate;
+    }
+
+    public void setEndDate(String endDate) {
+        this.endDate = endDate;
+    }
+
+    public String getReportId() {
+        return reportId;
+    }
+
+    public void setReportId(String reportId) {
+        this.reportId = reportId;
+    }
+
+    public String getSysUser() {
+        return sysUser;
+    }
+
+    public void setSysUser(String sysUser) {
+        this.sysUser = sysUser;
+    }
+
+    public String getSysPass() {
+        return sysPass;
+    }
+
+    public void setSysPass(String sysPass) {
+        this.sysPass = sysPass;
+    }
+
+    public String getRoleId() {
+        return roleId;
+    }
+
+    public void setRoleId(String roleId) {
+        this.roleId = roleId;
+    }
+
+    public String getNewPass() {
+        return newPass;
+    }
+
+    public void setNewPass(String newPass) {
+        this.newPass = newPass;
+    }
+}
