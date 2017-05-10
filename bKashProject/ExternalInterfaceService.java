@@ -6,7 +6,7 @@
         LOGGER.log(Level.INFO, "getExecuteData method entered");
        
         List<String> getDataList = new ArrayList<String>();
-        Object[] requtestedParams = {externalRequest.getUser(), externalRequest.getReportId(), externalRequest.getParams()};
+        Object[] requtestedParams = {externalRequest.getUser(), ...};
         LOGGER.log(Level.INFO, "Tethys getStatementsRequestData Params :: {0} :: {1} :: {2} :: pass = ****** ", requtestedParams);
 
         try {

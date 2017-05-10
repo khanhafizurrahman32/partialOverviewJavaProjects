@@ -13,6 +13,7 @@ import javax.xml.bind.annotation.XmlRootElement;
 public class ExternalRequest implements  Serializable{
 
     private String user;
+    // many more attributes
     
     List<QueryParameterWS> params;
 
